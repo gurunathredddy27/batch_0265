@@ -1,6 +1,32 @@
 import java.util.Scanner;
 
 public class Main {
+
+
+    public static void addition(double a , double b){
+        double add = a + b;
+        System.out.println("The addition is  " + add);
+    }
+
+    public static void subtraction(double a , double b){
+        double sub = a - b;
+        System.out.println("The subtraction is  " + sub);
+    }
+
+    public static void multiplication(double a, double b){
+        double mul = a * b;
+        System.out.println("The multiplication is  " + mul);
+    }
+
+    public static void division (double a, double b){
+        double div = a / b;
+        System.out.println("The division is  " + div);
+    }
+
+    public static void remainder (double a, double b){
+        double mod = a % b;
+        System.out.println("The remainder is  " + mod);
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int cont =1;
@@ -13,24 +39,19 @@ public class Main {
             int choice = sc.nextInt();
             switch (choice) {
                 case 1:
-                    double add = a + b;
-                    System.out.println("The addition is  " + add);
+                    addition(a,b);
                     break;
                 case 2:
-                    double sub = a - b;
-                    System.out.println("The subtraction is  " + sub);
+                    subtraction(a,b);
                     break;
                 case 3:
-                    double mul = a * b;
-                    System.out.println("The multiplication is  " + mul);
+                    multiplication(a,b);
                     break;
                 case 4:
-                    double div = a / b;
-                    System.out.println("The division is  " + div);
+                    division(a,b);
                     break;
                 case 5:
-                    double mod = a % b;
-                    System.out.println("The remainder is  " + mod);
+                    remainder(a,b);
                     break;
                 default:
                     System.out.println("Wrong Choice");
